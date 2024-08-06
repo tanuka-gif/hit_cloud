@@ -1,2 +1,191 @@
-Hi
-This is cloud computing
+hello
+
+anupa@Anupam MINGW64 ~
+$ git config --global user.name
+
+anupa@Anupam MINGW64 ~
+$ git config --global user.name "tanuka sinha"
+
+anupa@Anupam MINGW64 ~
+$
+
+
+anupa@Anupam MINGW64 ~
+$ git config --global user.name
+tanuka sinha
+
+anupa@Anupam MINGW64 ~
+$ git config user.name "tanuka.sinha.hit@gmail.com"
+fatal: not in a git directory
+
+anupa@Anupam MINGW64 ~
+$ e
+bash: e: command not found
+
+anupa@Anupam MINGW64 ~
+$ git config user.email "tanuka.sinha.hit@gmail.com"
+fatal: not in a git directory
+
+anupa@Anupam MINGW64 ~
+$ gif config --global user.email "tanuka,sinha.hit@gmail.com"
+bash: gif: command not found
+
+anupa@Anupam MINGW64 ~
+$ git config --global user.email "tanuka,sinha.hit@gmail.com"
+
+anupa@Anupam MINGW64 ~
+$ git config --global user.email
+tanuka,sinha.hit@gmail.com
+
+anupa@Anupam MINGW64 ~
+$ cd "C:\Users\anupa\OneDrive\Desktop\05_08_24"
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24
+$ git init
+Initialized empty Git repository in C:/Users/anupa/OneDrive/Desktop/05_
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/anupa/OneDrive/Deskto
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to t
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git add hello.txt
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.txt
+
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git commit -m "Test Commit"
+[master (root-commit) 352f161] Test Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hallo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git add hello.txt
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hallo2.txt
+
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git commit -m "HID001"
+[master 46f4b4b] HID001
+ 1 file changed, 2 insertions(+)
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hallo2.txt
+        hello3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git add .
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hallo2.txt
+        new file:   hello3.txt
+
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git restore --staged hello3.txt
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hallo2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello3.txt
+
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git commit -m "H001"
+[master cb70a2d] H001
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hallo2.txt
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git remote add origin https://github.com/tanuka-gif/hit_cloud.git    
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (master)
+$ git branch -M main
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 730 bytes | 243.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/tanuka-gif/hit_cloud.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (main)
+$ ^C
+
+anupa@Anupam MINGW64 ~/OneDrive/Desktop/05_08_24 (main)
+$
